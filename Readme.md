@@ -1,7 +1,7 @@
 # TTLCache - an in-memory cache with expiration
 
-[![Documentation](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/ReneKroon/ttlcache/v2)
-[![Release](https://img.shields.io/github/release/ReneKroon/ttlcache.svg?label=Release)](https://github.com/ReneKroon/ttlcache/releases)
+[![Documentation](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/skailhq/ttlcache/v2)
+[![Release](https://img.shields.io/github/release/skailhq/ttlcache.svg?label=Release)](https://github.com/skailhq/ttlcache/releases)
 
 TTLCache is a simple key/value cache in golang with the following functions:
 
@@ -15,15 +15,15 @@ TTLCache is a simple key/value cache in golang with the following functions:
 
 Note (issue #25): by default, due to historic reasons, the TTL will be reset on each cache hit and you need to explicitly configure the cache to use a TTL that will not get extended.
 
-[![Build Status](https://www.travis-ci.com/ReneKroon/ttlcache.svg?branch=master)](https://travis-ci.com/ReneKroon/ttlcache)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ReneKroon/ttlcache)](https://goreportcard.com/report/github.com/ReneKroon/ttlcache)
-[![Coverage Status](https://coveralls.io/repos/github/ReneKroon/ttlcache/badge.svg?branch=master)](https://coveralls.io/github/ReneKroon/ttlcache?branch=master)
-[![GitHub issues](https://img.shields.io/github/issues/ReneKroon/ttlcache.svg)](https://github.com/ReneKroon/ttlcache/issues)
-[![license](https://img.shields.io/github/license/ReneKroon/ttlcache.svg?maxAge=2592000)](https://github.com/ReneKroon/ttlcache/LICENSE)
+[![Build Status](https://www.travis-ci.com/skailhq/ttlcache.svg?branch=master)](https://travis-ci.com/skailhq/ttlcache)
+[![Go Report Card](https://goreportcard.com/badge/github.com/skailhq/ttlcache)](https://goreportcard.com/report/github.com/skailhq/ttlcache)
+[![Coverage Status](https://coveralls.io/repos/github/skailhq/ttlcache/badge.svg?branch=master)](https://coveralls.io/github/skailhq/ttlcache?branch=master)
+[![GitHub issues](https://img.shields.io/github/issues/skailhq/ttlcache.svg)](https://github.com/skailhq/ttlcache/issues)
+[![license](https://img.shields.io/github/license/skailhq/ttlcache.svg?maxAge=2592000)](https://github.com/skailhq/ttlcache/LICENSE)
 
 ## Usage
 
-`go get github.com/ReneKroon/ttlcache/v2`
+`go get github.com/skailhq/ttlcache/v2`
 
 You can copy it as a full standalone demo program. The first snippet is basic usage, where the second exploits more options in the cache.
 
@@ -35,7 +35,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ReneKroon/ttlcache/v2"
+	"github.com/skailhq/ttlcache/v2"
 )
 
 var notFound = ttlcache.ErrNotFound
@@ -65,7 +65,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ReneKroon/ttlcache/v2"
+	"github.com/skailhq/ttlcache/v2"
 )
 
 var (

@@ -1,4 +1,4 @@
-module github.com/ReneKroon/ttlcache/v2
+module github.com/skailhq/ttlcache/v2
 
 go 1.15
 
